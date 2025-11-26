@@ -24,49 +24,26 @@ Execute the program using runserver command.
 
 # PROGRAM
 ~~~
+html 
+
+{% load static %}
+
+<!DOCTYPE html>
+
 <html>
     <head>
         <title>SLOT TIMETABLE</title>
-        <link rel="icon" href="SEC-Logo-1.png">
-        <center>
-            <img src = "SAVEETHA.png" height="100" width="700"
-        </center>
-        <style>
-            table{
-                background-color:rgb(127, 180, 244);
-                border:2px solid black;
-                width:50%;
-                text-align:center;
-                border-collapse:collapse;
-                padding:10px;
-            }
-            th{
-                border: 2px solid black;
-                text-align:center;
-                padding:10px;
-                font-family:"Footlight MT Light";
-            }
-            td{
-                text-align:center;
-                padding:10px;
-                border:2px solid black;
-                background-color:rgb(206, 231, 252);
-                font-family: "Palatino Linotype";
-            }
-            h3{
-                text-align:center;
-                font-family: "Lucida Calligraphy";
-            }
-            h2{
-                text-align: center;
-                font-family:"Eras Medium ITC" ;
-            }
-            body {
-                 font-family: "Montserrat Bold";
-            }
-    </style>
+
+        <link rel="stylesheet" href="{% static 'CSS.css' %}">
+
+        <link rel="icon" href="{% static 'SEC-Logo-1.png'%}">
+
     </head>
+
     <body>
+        <center>
+            <img src = "{% static 'SAVEETHA.png' %}" height="100" width="700">
+        </center>    
         <h2>SLOT TIMETABLE</h2>
         <h3>Rosetta Jenifer C - 25012347</h3>
         <center>
@@ -140,11 +117,49 @@ Execute the program using runserver command.
     </center>
 </body> 
 </html>
+
+CSS
+
+
+            table{
+                background-color:rgb(127, 180, 244);
+                border:2px solid black;
+                width:50%;
+                text-align:center;
+                border-collapse:collapse;
+                padding:10px;
+            }
+            th{
+                border: 2px solid black;
+                text-align:center;
+                padding:10px;
+                font-family:"Footlight MT Light";
+            }
+            td{
+                text-align:center;
+                padding:10px;
+                border:2px solid black;
+                background-color:rgb(206, 231, 252);
+                font-family: "Palatino Linotype";
+            }
+            h3{
+                text-align:center;
+                font-family: "Lucida Calligraphy";
+            }
+            h2{
+                text-align: center;
+                font-family:"Eras Medium ITC" ;
+            }
+            body {
+                 font-family: "Montserrat Bold";
+                 background-color: rgb(215, 234, 255);
+            }
+
 ~~~
 
 # OUTPUT
+![alt text](<slot timetable ss.png>)
 
-![alt text](<slot_tt/slot_app/SLOT TIMETABLE - Google Chrome 25-11-2025 17_32_21.png>)
 
 # RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
