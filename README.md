@@ -155,6 +155,25 @@ CSS
                  background-color: rgb(215, 234, 255);
             }
 
+views.py
+
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'timetable.html')
+
+urls.py
+
+from django.contrib import admin
+from django.urls import path
+from slot_app import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.home)
+    
+]
+
 ~~~
 
 # OUTPUT
