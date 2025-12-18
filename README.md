@@ -91,8 +91,7 @@ timetable.html
                 <td colspan="2">FREE SLOT</td>
             </tr>
         </table>
-        <h3></h3>
-        <table style="width:500px;border-collapse: collapse;">
+        <table>
             <tr background-color:rgb(255, 145, 217);>
                 <th> S.NO</th>
                 <th> SUBJECT CODE</th>
