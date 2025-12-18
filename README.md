@@ -23,8 +23,9 @@ Add your timetable using `<td>` tag.
 Execute the program using runserver command.
 
 # PROGRAM
-~~~
 
+timetable.html
+```
 {% load static %}
 
 <!DOCTYPE html>
@@ -116,10 +117,10 @@ Execute the program using runserver command.
     </center>
 </body> 
 </html>
+```
 
-
-CSS
-
+CSS.css
+```
 
             table{
                 background-color:rgb(127, 180, 244);
@@ -154,16 +155,16 @@ CSS
                  font-family: "Montserrat Bold";
                  background-color: rgb(215, 234, 255);
             }
-
+```
 views.py
-
+```
 from django.shortcuts import render
 
 def home(request):
     return render(request, 'timetable.html')
-
+```
 urls.py
-
+```
 from django.contrib import admin
 from django.urls import path
 from slot_app import views
@@ -173,10 +174,7 @@ urlpatterns = [
     path('', views.home)
     
 ]
-
-
-~~~
-
+```
 # OUTPUT
 ![alt text](<slot timetable ss.png>)
 
